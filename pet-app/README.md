@@ -15,7 +15,7 @@ MODELS:
 - Owner has a first name, last name, age, and email
 - Owner has many pets
 - Pet has a name and category (dog, cat, or bird)
-- Pet belongs to a User 
+- Pet belongs to a Owner 
 
 CONTROLLERS AND VIEWS:
 - User can do full CRUD on an Owner
