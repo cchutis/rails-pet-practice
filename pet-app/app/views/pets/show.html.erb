@@ -1,0 +1,11 @@
+<center>
+<h1><%=@pet.name%>'s Page</h1>
+<hr>
+<p><strong>Name:</strong> <%=@pet.name%></p>
+<p><strong>Category:</strong> <%=@pet.category%></p>
+<p><strong>Owner:</strong> <%=@owner.id%></p>
+<hr>
+<a href="/pets/<%=@pet.id%>/edit"><button style="color: green;">Edit Profile</button></a>
+<%= button_to "Delete Profile", {:action => 'destroy', :id => @pet.id }, :method => :delete, data: {confirm: "Are you sure?"} %>
+<p><a href="/pets"><button>Back to Pet List</button></a>
+</center>

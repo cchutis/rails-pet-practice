@@ -1,4 +1,4 @@
-Goal: Review all of the core concepts of Rails by building an app from scratch
+<!-- Goal: Review all of the core concepts of Rails by building an app from scratch
 	- MVC
 	- ActiveRecord
 	- Routes
@@ -21,12 +21,12 @@ CONTROLLERS AND VIEWS:
 - User can do full CRUD on an Owner
 - User can do full CRUD on a Pet
 - Owner and Pet index pages link to show page
-- Custom route allows users to see all Owners with 2 or more pets
+- Custom route allows users to see all Owners with 2 or more pets -->
 
 **BONUS:**
-VALIDATIONS:
-- There cannot be duplicate Owners (unique first names)
-- Owners must be older than 18
+<!-- VALIDATIONS:
+- There cannot be duplicate Owners (unique first names) -->
+<!-- - Owners must be older than 18 -->
 - Pet cannot be added if the category is not a dog, cat, or bird
 - User sees a message to verify that a Pet/Owner was 
 successfully, or unsuccessfully, created

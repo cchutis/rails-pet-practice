@@ -1,0 +1,10 @@
+<center>
+<h1>Owners</h1>
+<hr>
+
+<%@owners.each do |owner|%>
+<p><%=link_to owner.full_name, "/owners/#{owner.id}"%></p>
+<%end%>
+<a href="/owners/new"><button>Add a New Pet Owner</button></a>
+
+</center>

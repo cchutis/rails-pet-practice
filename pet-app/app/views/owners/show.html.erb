@@ -1,0 +1,11 @@
+<center>
+<h1><%=@owner.first_name%>'s Profile</h1>
+<hr>
+<p><strong>Name:</strong> <%=@owner.full_name%></p>
+<p><strong>Age:</strong> <%=@owner.age%></p>
+<p><strong>Email:</strong> <%=@owner.email%></p>
+<hr>
+<a href="/owners/<%=@owner.id%>/edit"><button style="color: green;">Edit Profile</button></a>
+<%= button_to "Delete Profile", {:action => 'destroy', :id => @owner.id }, :method => :delete, data: {confirm: "Are you sure?"} %>
+<p><a href="/owners"><button>Back to Owner List</button></a>
+</center>

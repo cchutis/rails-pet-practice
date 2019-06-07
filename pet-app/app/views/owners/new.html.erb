@@ -1,0 +1,21 @@
+<center>
+ <% if flash[:message] %>
+    <div class="notice"><%= flash[:message] %></div>
+  <% end %>
+<h1>Add a New Pet Owner</h1>
+<hr>
+<%=form_for @owner do |f|%>
+    <%=f.label "First Name"%>
+    <%=f.text_field "first_name"%>
+    <%=f.label "Last Name"%>
+    <%=f.text_field "last_name"%>
+    <%=f.label "Age"%>
+    <%=f.number_field "age"%>
+    <%=f.label "Email Address"%>
+    <%=f.text_field "email"%>
+    <%=f.submit "Create new profile!"%>
+<%end%>
+<p>
+<hr>
+<p><a href="/owners"><button>Cancel and Go Back</button></a>
+</center>

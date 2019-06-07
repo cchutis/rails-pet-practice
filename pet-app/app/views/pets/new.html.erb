@@ -1,0 +1,19 @@
+<center>
+ <% if flash[:message] %>
+    <div class="notice"><%= flash[:message] %></div>
+  <% end %>
+<h1>Adopt a New Pet</h1>
+<hr>
+<%=form_for @pet do |f|%>
+    <%=f.label "Name"%>
+    <%=f.text_field "name"%>
+    <%=f.label "Category"%>
+    <%=f.text_field "category"%>
+    <%=f.label "Owner"%>
+    <%=f.text_field "owner_id"%>
+    <%=f.submit "Adopt!"%>
+<%end%>
+<p>
+<hr>
+<p><a href="/owners"><button>Cancel and Go Back</button></a>
+</center>
